@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 @font-face {
-  font-family: 'GeneralSans-Bold';
-  src: url("../public/fonts/GeneralSans-Bold.otf");
- 
-  
+  font-family: 'NIKEA-Regular';
+  src: url('../public/fonts/NIKEA-Regular.woff') format('woff'),
+       url('../public/fonts/NIKEA-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html,
 body {
+  font-family: 'Fira Sans', sans-serif;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+h1, h2, h3 {
+  font-weight: 800;
+  font-family: 'NIKEA-Regular';
 }
 
 a {

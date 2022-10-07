@@ -7,10 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        generalsansbold:"GeneralSans-Bold",
-        recia:"Recia-Bold",
-      }
+      sans:['Inter','sans-serif'],
+      alka:['Alkami','serif'],
+      nikea:['Nikea-Regular'],
+      fira:['Fira Sans', 'sans-serif'],
     },
+  },
   },
   plugins: [],
 }
