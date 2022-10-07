@@ -4,6 +4,7 @@ import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import Image from "next/image";
 import ImageTheo from "../public/pfp.png";
 
+
 export default function Home() {
   return (
     <div>
