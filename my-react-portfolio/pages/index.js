@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { useState } from "react";
 import Image from "next/image";
 import ImageTheo from "../public/pfp.png";
 import Designicon from "../public/designicon.png";
@@ -9,35 +10,38 @@ import Cmsicon from "../public/cmsandothericon.png";
 
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Theo Daudebourg Portfolio</title>
         <meta name="description" content="Theo Daudebourg Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-hite px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="uppercase">Theo Daudebourg</h1>
+            <h1 className="">Theo Daudebourg</h1>
             <ul className="flex items-center">
-              <li className="drop-shadow-lg">
-                <BsFillMoonStarsFill className="cursor-pointer text-xl " />
+              <li>
+                <BsFillMoonStarsFill 
+                onClick={() => setDarkMode(!darkMode)}
+                className="cursor-pointer text-2xl" />
               </li>
               <li className="drop-shadow-lg">
                 <a
-                  className="bg-gradient-to-r from-[#595CFF] to-[#C6F8FF] text-white px-4 py-2 rounded-md ml-8 font-nikea"
+                  className="bg-gradient-to-r from-[#595CFF] to-[#C6F8FF] text-white px-4 py-2 rounded-md ml-8 border-none font-nikea"
                   href="#"
                 >
-                  {" "}
-                  Resume{" "}
+                  Resume
                 </a>
               </li>
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-3xl py-2 text-[#595CFF] font-bold">
+            <h2 className="py-2 text-[#595CFF] font-bold md:text-6xl">
               Theo Daudebourg
             </h2>
             <h3 className="py-2 ">Front End Web Developer</h3>
@@ -51,7 +55,7 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-[#595CFF] rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className="mx-auto bg-gradient-to-b from-[#595CFF] rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
             <Image
               className=""
               src={ImageTheo}
