@@ -74,12 +74,6 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section>
-          <div className="pt-10">
-
-
-          </div>
-        </section>
         <section className="text-center ">
           <div className="py-10">
             <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700 "></hr>
@@ -132,9 +126,9 @@ export default function Home() {
               <h2 className="text-lg  text-[#595CFF]">
                 CMS PLATFORM
               </h2>
-              <h4 className="py-2 text-xs md:text-sm">
+              <h3 className="py-2 text-xs md:text-sm">
                 Which tool i use to transform my code
-              </h4>
+              </h3>
               <p className="py-1">Shopify and Shopify Plus</p>
               <p className="py-1">Wordpress & WooCommerce</p>
             </div>
