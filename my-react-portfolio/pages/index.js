@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useState } from "react";
 import Image from "next/image";
+
 import ImageTheo from "../public/images/pfp.png";
 import Designicon from "../public/images/designicon.png";
 import Techstackicon from "../public/images/techstackicon.png";
@@ -12,7 +13,7 @@ import sakaspirits from "../public/images/sakaspirits.jpg";
 import sliimbay from "../public/images/sliimbay.png";
 import tinypods from "../public/images/tinypods.png";
 import sweetnabbody from "../public/images/sweetnabbody.png";
-import mayfurs from "../public/images/sweetnabbody.png";
+import mayfurs from "../public/images/mayfursbanner.png";
 import anese from "../public/images/sweetnabbody.png";
 
 export default function Home() {
@@ -148,7 +149,8 @@ export default function Home() {
               programming and e-commerce consulting.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+       
+          <div className="flex flex-row gap-10 py-10 lg:flex-row">
             <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
@@ -183,7 +185,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={sweetnabbody}
+                src={mayfurs}
               />
             </div>
             <div className="basis-1/3 flex-1">
