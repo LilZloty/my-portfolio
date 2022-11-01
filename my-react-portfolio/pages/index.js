@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import ImageTheo from "../public/images/pfp.png";
@@ -16,8 +16,10 @@ import sweetnabbody from "../public/images/sweetnabbody.png";
 import mayfurs from "../public/images/mayfursbanner.png";
 import anese from "../public/images/sweetnabbody.png";
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -55,7 +57,7 @@ export default function Home() {
             </h2>
             <h3 className="py-2 md:text-1xl hover:animate-bounce">Front End Web Developer</h3>
             <p className="py-5 dark:text-gray-300 ">
-              Everyday i<b> develop</b> and <b>design</b> unique brands on
+              Everyday i develop and design unique brands on
               <b> Shopify</b>.
             </p>
           </div>
@@ -75,10 +77,10 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section className="text-center ">
+        <section className="text-center">
           <div className="py-10">
             <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700 "></hr>
-            <h2 className="text-3xl text-[#595CFF]">a brief summary from my experience.</h2> 
+            <h2 className="text-3xl text-[#595CFF]">a brief summary <br></br>of my experience</h2>
             <p className="text-md py-2 leading-8 dark:text-gray-300">
               Since 2017, i <b> design</b> and <b> develop</b>,
               <b> Shopify brands</b>, who are really making <b>sells</b>. <br />
@@ -98,7 +100,7 @@ export default function Home() {
         <section className="pt-10">
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
-              <Image alt="" src={Designicon} width={128} height={128} />
+              <Image alt="" src={Designicon} width={100} height={100} />
               <h2 className="text-lg text-[#595CFF]">
                 Beautiful Designs
               </h2>
@@ -110,7 +112,7 @@ export default function Home() {
               <p className="py-1"> Figma </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
-              <Image alt="" src={Techstackicon} width={128} height={128} />
+              <Image alt="" src={Techstackicon} width={100} height={100} />
               <h2 className="text-lg text-[#595CFF]">Tech Stack</h2>
               <h3 className="py-2 text-xs md:text-sm">
                 What i use to code the desire interface
@@ -123,7 +125,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
-              <Image alt="" src={Cmsicon} width={128} height={128} />
+              <Image alt="" src={Cmsicon} width={100} height={100} />
               <h2 className="text-lg  text-[#595CFF]">
                 CMS PLATFORM
               </h2>
@@ -135,7 +137,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-10 ">
+        <section>
           <div className="text-center py-20">
             <h3 className="text-3xl py-1 text-[#595CFF] ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
@@ -149,9 +151,9 @@ export default function Home() {
               programming and e-commerce consulting.
             </p>
           </div>
-       
-          <div className="flex flex-row gap-10 py-10 lg:flex-row">
-            <div className="basis-1/3 flex-1 ">
+         
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -161,6 +163,7 @@ export default function Home() {
                 alt="Sweetnabbody"
               />
             </div>
+
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
@@ -168,6 +171,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={sakaspirits}
+                alt='sakaspirits'
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -177,6 +181,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={sweetnabbody}
+                alt='sweetnabbody'
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -186,6 +191,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={mayfurs}
+                alt='mayfurs'
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -195,6 +201,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={tinypods}
+                alt='tinypods'
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -204,10 +211,14 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={sliimbay}
+                alt='sliimbay'
               />
             </div>
           </div>
         </section>
+
+
+        
       </main>
     </div>
   );
