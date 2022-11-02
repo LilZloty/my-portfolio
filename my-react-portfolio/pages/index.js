@@ -3,7 +3,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-
 import ImageTheo from "../public/images/pfp.png";
 import Designicon from "../public/images/designicon.png";
 import Techstackicon from "../public/images/techstackicon.png";
@@ -19,7 +18,6 @@ import anese from "../public/images/sweetnabbody.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -42,15 +40,21 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          
+
+          <div className="vitetestbg">
           <div className="mx-auto bg-gradient-to-b from-[#595CFF] rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+         
             <Image
-              className=""
               src={ImageTheo}
               alt="profilimgtheo"
               layout="fill"
               objectFit="cover"
             />
+            </div>
           </div>
+        
+          
           <div className="text-center p-10 py-10">
             <h2 className="text-2xl py-2 text-[#595CFF] md:text-4xl">
               Theo Daudebourg
@@ -151,17 +155,29 @@ export default function Home() {
               programming and e-commerce consulting.
             </p>
           </div>
-         
+
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={sweetnabbody}
-                alt="Sweetnabbody"
-              />
+              <div className="container relative w-full opacity-100">
+                <Image
+                  className="rounded-lg object-cover shadow-lg"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={sweetnabbody}
+                  alt="Sweetnabbody"
+                />
+                <div className="transition duration-500 ease-in-out rounded-lg h-full w-full opacity-0 shadow-lg shadow-[#595CFF] bg-[#000000eb] dark:bg-[#212121] absolute top-0 bottom-0 right-0 left-0 hover:opacity-100">
+                  <div class="text">
+                    <h2 className="text-[#595CFF] dark:[#595CFF]"><a href="https://sweetnabbody.com/">Sweetnabbody</a></h2>
+                    <p className="text-white dark:text-white">A Shopify cosmetic brand <br></br>Designed and developped from scratch</p>
+                    <ul className="pt-5 ">
+                    <li> <h3 className="text-[#595CFF] dark:[#595CFF]">Theme Development stack</h3><p className="text-white">Liquid, Ajax, Javascript, Shopify </p></li>
+                    <li className="pt-2 text-[#595CFF] dark:[#595CFF]"> <h3>Web Design</h3><p className="text-white">Photoshop, Illustrator, Figma, Blender </p></li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
             </div>
 
             <div className="basis-1/3 flex-1">
@@ -217,8 +233,6 @@ export default function Home() {
           </div>
         </section>
 
-
-        
       </main>
     </div>
   );
