@@ -76,7 +76,7 @@ export default function Home() {
                 href="#"
               >
 
-                Resume
+                Contact me
               </a>
             </button>
           </div>
