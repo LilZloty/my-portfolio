@@ -41,19 +41,18 @@ export default function Home() {
             </ul>
           </nav>
           
-
-          <div className="vitetestbg">
-          <div className="mx-auto bg-gradient-to-b from-[#595CFF] rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+          <div class="md:h-96 md:w-96 mx-auto relative -z-0">
+           <section class="img-bg md:h-96 md:w-96 mx-auto absolute dark:linear-gradient(-45deg, #595CFF 50%, #595CFF 50%)">  </section>
+          <div className="mx-auto bg-gradient-to-b from-[#595CFF] rounded-full w-80 h-80 overflow-hidden mt-20 md:h-96 md:w-96 ">
          
-            <Image
+            <Image className=""
               src={ImageTheo}
               alt="profilimgtheo"
               layout="fill"
-              objectFit="cover"
             />
             </div>
-          </div>
-        
+            
+            </div>
           
           <div className="text-center p-10 py-10">
             <h2 className="text-2xl py-2 text-[#595CFF] md:text-4xl">
