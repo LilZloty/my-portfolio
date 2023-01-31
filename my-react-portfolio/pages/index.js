@@ -79,17 +79,24 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section class="text-center">
-        <div className="py-10">
-            <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700 "/>
-            <h2 className="text-3xl text-[#595CFF]">a brief summary of my experience</h2>
+        <section className="text-center">
+          <div className="py-10">
+            <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700 "></hr>
+            <h2 className="text-3xl text-[#595CFF]">a brief summary <br></br>of my experience</h2>
             <p className="text-md py-2 leading-8 dark:text-gray-300">
-            As a seasoned front-end developer with expertise in Shopify and WordPress in the e-commerce space, I craft beautiful and functional Shopify brands that drive sales success.
-            I design and develop successful Shopify brands that are making sales, i have worked with 6-7 figure brands, including the top 100 brands on Shopify and Shopify Plus.
-            My services range from developing and designing a custom theme from scratch to making small modifications, such as a button change.
-            I can also create a complete brand identity that will set your brand apart and attract more prospects, resulting in increased sales.
+              Since 2017, i <b> design</b> and <b> develop</b>,
+              <b> Shopify brands</b>, who are really making <b>sells</b>. <br />
+              I work with
+              <b> 6-7 figures brands,</b> the <b> top 100 brands</b> on
+              <b> Shopify</b> and <b> Shopify Plus</b>.
+              <br /> From <b>Developing</b> and
+              <b> Designing </b> a theme from scratch to a small
+              <b> modification</b> on a<b> button.</b> <br /> Or create a
+              <b> full brand identity</b> which will put your <b>brand</b> way
+              more far from <b>the others brands.</b> <br /> With her
+              <b> unique identity</b>, it easily can bring you,
+              <b> more prospects</b> and also<b> more sells</b>. <br />
             </p>
-        
           </div>
         </section>
         <section className="pt-10">
