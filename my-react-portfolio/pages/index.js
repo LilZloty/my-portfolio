@@ -14,11 +14,11 @@ import tinypods from "../public/images/tinypods.png";
 import sweetnabbody from "../public/images/sweetnabbody.png";
 import mayfurs from "../public/images/mayfursbanner.png";
 import anese from "../public/images/sweetnabbody.png";
-
+import AnimatedText from './AnimatedText'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
+  const [index, setIndex] = useState(0);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -82,21 +82,11 @@ export default function Home() {
         <section className="text-center">
           <div className="py-10">
             <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700 "></hr>
-            <h2 className="text-3xl text-[#595CFF]">a brief summary <br></br>of my experience</h2>
-            <p className="text-md py-2 leading-8 dark:text-gray-300">
-              Since 2017, i <b> design</b> and <b> develop</b>,
-              <b> Shopify brands</b>, who are really making <b>sells</b>. <br />
-              I work with
-              <b> 6-7 figures brands,</b> the <b> top 100 brands</b> on
-              <b> Shopify</b> and <b> Shopify Plus</b>.
-              <br /> From <b>Developing</b> and
-              <b> Designing </b> a theme from scratch to a small
-              <b> modification</b> on a<b> button.</b> <br /> Or create a
-              <b> full brand identity</b> which will put your <b>brand</b> way
-              more far from <b>the others brands.</b> <br /> With her
-              <b> unique identity</b>, it easily can bring you,
-              <b> more prospects</b> and also<b> more sells</b>. <br />
-            </p>
+            <h2 className="text-3xl text-[#595CFF] pb-5">a brief summary <br></br>of my experience</h2>
+            <AnimatedText />
+            <p class="my-4"> From developing and designing  a theme from scratch, to small modifications. <br></br>
+              Or create a full brand identity  which will put your brand away from the others brands.    <br></br>
+              With her unique identity, it easily can bring you, more leads and also, more sells.</p>
           </div>
         </section>
         <section className="pt-10">
