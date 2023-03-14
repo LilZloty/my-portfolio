@@ -90,7 +90,7 @@ export default function Home() {
               With her unique identity, it easily can bring you, more leads and also, more sells.</p>
           </div>
         </section>
-        <section className="pt-10">
+        <section className="grid h-auto place-items-center w-auto">
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
               <Image alt="" src={Designicon} width={100} height={100} />
