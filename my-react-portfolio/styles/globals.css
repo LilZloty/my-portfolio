@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import '../public/fonts/NIKEA-Regular.woff';
-@import '../public/fonts/NIKEA-Regular.woff2';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '../fonts/NIKEA-Regular.woff';
+@import '../fonts/NIKEA-Regular.woff2';
 
 @font-face {
-  font-family: 'NIKEA-Regular';
-  src: url('../public/fonts/NIKEA-Regular.woff') format('woff'),
-       url('../public/fonts/NIKEA-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'NIKEA';
+  src: url('/fonts/NIKEA-Regular.woff2') format('woff2'),
+       url('/fonts/NIKEA-Regular.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {

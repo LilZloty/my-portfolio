@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
       sans:['Inter','sans-serif'],
       alka:['Alkami','serif'],
-      nikea:['Nikea-Regular'],
+      nikea:['NIKEA', 'sans-serif'],
       fira:['Fira Sans', 'sans-serif'],
       Inter:['Inter', 'sans-serif'],
     },
