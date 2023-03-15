@@ -157,7 +157,7 @@ export default function Home() {
                   alt="Sweetnabbody"
                 />
                 <div className="transition duration-500 ease-in-out rounded-lg h-full w-full opacity-0 shadow-lg shadow-[#595CFF] bg-[#000000eb] dark:bg-[#212121] absolute top-0 bottom-0 right-0 left-0 hover:opacity-100">
-                  <div class="text-center h-full w-full">
+                  <div class="text-center place-items-center h-auto w-auto">
                     <h2 className="text-[#595CFF] dark:[#595CFF]"><a href="https://sweetnabbody.com/">Sweetnabbody</a></h2>
                     <p className="text-white dark:text-white">A Shopify cosmetic brand <br></br>Designed and developped from scratch</p>
                     <ul className="pt-5 ">
