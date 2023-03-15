@@ -15,7 +15,7 @@ import sweetnabbody from "../public/images/sweetnabbody.png";
 import mayfurs from "../public/images/mayfursbanner.png";
 import anese from "../public/images/sweetnabbody.png";
 import AnimatedText from './AnimatedText'
-import NIKEA from '@next/font/local'
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);

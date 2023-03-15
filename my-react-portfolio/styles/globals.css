@@ -3,7 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import '../public/fonts/NIKEA-Regular.woff';
+@import '../public/fonts/NIKEA-Regular.woff2';
 
 @font-face {
   font-family: 'NIKEA-Regular';
