@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-10 md:px-20 lg:px-40 dark:bg-[#121212] dark:text-white py-10">
+      <main className="px-10 md:px-20 lg:px-40 dark:bg-[#121212f0] dark:text-white py-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="">Theo Daudebourg</h1>
@@ -290,7 +290,7 @@ export default function Home() {
 
       </main>
       
-<footer class="pt-5">
+<footer class="pt-5 dark:bg-[#121212f0] dark:text-white py-10">
     <div class="mx-auto w-full container p-4 sm:p-6">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
