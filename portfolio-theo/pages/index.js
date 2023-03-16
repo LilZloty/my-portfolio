@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useState, useEffect } from "react";
@@ -46,10 +46,14 @@ export default function Home() {
            <section className="img-bg md:h-96 md:w-96 mx-auto absolute dark:linear-gradient(-45deg, #595CFF 50%, #595CFF 50%)">  </section>
           <div className="mx-auto bg-gradient-to-b from-[#595CFF] rounded-full w-80 h-80 overflow-hidden mt-20 md:h-96 md:w-96 ">
          
-            <Image className=""
+            <Image
+              className=""
               src={ImageTheo}
               alt="profilimgtheo"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             </div>
             
             </div>
@@ -93,7 +97,15 @@ export default function Home() {
         <section className="grid h-auto place-items-center w-auto">
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
-              <Image alt="WebDesignicon" src={Designicon} width={100} height={100} />
+              <Image
+                alt="WebDesignicon"
+                src={Designicon}
+                width={100}
+                height={100}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h2 className="text-lg text-[#595CFF]">
                 Beautiful Designs
               </h2>
@@ -105,7 +117,15 @@ export default function Home() {
               <p className="py-1"> Figma </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
-              <Image alt="Technologieicon" src={Techstackicon} width={100} height={100} />
+              <Image
+                alt="Technologieicon"
+                src={Techstackicon}
+                width={100}
+                height={100}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h2 className="text-lg text-[#595CFF]">Tech Stack</h2>
               <h3 className="py-2 text-xs md:text-sm">
                 What i use to code the desire interface
@@ -118,7 +138,15 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:bg-opacity-5 dark:shadow-none dark:text-gray-300">
-              <Image alt="Cmsicon" src={Cmsicon} width={100} height={100} />
+              <Image
+                alt="Cmsicon"
+                src={Cmsicon}
+                width={100}
+                height={100}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h2 className="text-lg  text-[#595CFF]">
                 CMS PLATFORM
               </h2>
@@ -152,10 +180,13 @@ export default function Home() {
                   className="rounded-lg object-cover shadow-lg"
                   width={"100%"}
                   height={"100%"}
-                  layout="responsive"
                   src={sweetnabbody}
                   alt="Sweetnabbody"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
                 <div className="transition duration-500 ease-in-out rounded-lg h-full w-full opacity-0 shadow-lg shadow-[#595CFF] bg-[#000000eb] dark:bg-[#212121] absolute top-0 bottom-0 right-0 left-0 hover:opacity-100">
                   <div className="text-center place-items-center h-auto w-auto">
                     <h2 className="text-[#595CFF] dark:[#595CFF]"><a href="https://sweetnabbody.com/">Sweetnabbody</a></h2>
@@ -174,50 +205,65 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={sakaspirits}
                 alt='sakaspirits'
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={sweetnabbody}
                 alt='sweetnabbody'
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={mayfurs}
                 alt='mayfurs'
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={tinypods}
                 alt='tinypods'
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={sliimbay}
                 alt='sliimbay'
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </section>
