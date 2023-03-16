@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -8,15 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-      sans:['Inter','sans-serif'],
-      alka:['Alkami','serif'],
-      nikea:['NIKEA', 'sans-serif'],
-      fira:['Fira Sans', 'sans-serif'],
-      Inter:['Inter', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        alka: ['Alkami', 'serif'],
+        nikea: ['NIKEA', 'sans-serif'],
+        fira: ['Fira Sans', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
+      },
     },
   },
-  },
-  plugins: [
-    require('tailwind-scrollbar-hide')
-  ],
+  plugins: [  ],
 }

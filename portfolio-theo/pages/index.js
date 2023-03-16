@@ -1,8 +1,8 @@
-import Head from "next/head";
+import Head from 'next/head'
+import Image from 'next/image'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import ImageTheo from "../public/images/pfp.png";
 import Designicon from "../public/images/designicon.png";
 import Techstackicon from "../public/images/techstackicon.png";
@@ -16,14 +16,6 @@ import mayfurs from "../public/images/mayfursbanner.png";
 import anese from "../public/images/sweetnabbody.png";
 import AnimatedText from './AnimatedText'
 
-
-import {
-  PRIMARY_COLOR,
-  DARK_BG_COLOR,
-  TEXT_WHITE_COLOR,
-  TEXT_GRAY_COLOR,
-  TEXT_DARK_GRAY_COLOR,
-} from "./colors";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
