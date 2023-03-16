@@ -20,6 +20,11 @@
 
 html,
 body {
+  background-image: url("/images/The-Blackwall-Database.webp"), linear-gradient(45deg, rgba(89, 92, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(89, 92, 255, 0.2) 50%, rgba(89, 92, 255, 0.2) 75%, transparent 75%, transparent);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
   font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;

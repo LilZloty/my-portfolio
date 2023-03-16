@@ -20,6 +20,7 @@ import AnimatedText from './AnimatedText'
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [index, setIndex] = useState(0);
+  const [hover, setHover] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -28,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-[#121212] dark:text-white">
+      <main className="px-10 md:px-20 lg:px-40 dark:bg-[#121212] dark:text-white">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="">Theo Daudebourg</h1>
@@ -174,31 +175,50 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <div className="container relative w-full opacity-100">
-                <Image
-                  className="rounded-lg object-cover shadow-lg"
-                  width={"100%"}
-                  height={"100%"}
-                  src={sweetnabbody}
-                  alt="Sweetnabbody"
-                  sizes="100vw"
-                  style={{
-                    width: "100%",
-                    height: "auto"
-                  }} />
-                <div className="transition duration-500 ease-in-out rounded-lg h-full w-full opacity-0 shadow-lg shadow-[#595CFF] bg-[#000000eb] dark:bg-[#212121] absolute top-0 bottom-0 right-0 left-0 hover:opacity-100">
-                  <div className="text-center place-items-center h-auto w-auto">
-                    <h2 className="text-[#595CFF] dark:[#595CFF]"><a href="https://sweetnabbody.com/">Sweetnabbody</a></h2>
-                    <p className="text-white dark:text-white">A Shopify cosmetic brand <br></br>Designed and developped from scratch</p>
-                    <ul className="pt-5 ">
-                    <li> <h3 className="text-[#595CFF] dark:[#595CFF]">Theme Development stack</h3><p className="text-white">Liquid, Ajax, Javascript, Shopify </p></li>
-                    <li className="pt-2 text-[#595CFF] dark:[#595CFF]"> <h3>Web Design</h3><p className="text-white">Photoshop, Illustrator, Figma, Blender </p></li>
-                    </ul>
-                    </div>
-                </div>
-              </div>
-            </div>
+          <div className="basis-1/3 flex-1">
+  <div className="container relative w-full">
+    <Image
+      className="rounded-lg object-cover shadow-lg transition-all duration-500 hover:opacity-40"
+      width={"100%"}
+      height={"100%"}
+      src={sweetnabbody}
+      alt="Sweetnabbody"
+      sizes="100vw"
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
+    />
+    <div className="absolute inset-x-0 top-0 bottom-0 flex items-center justify-center">
+      <div className="text-center p-4 bg-transparent transition-all duration-500 opacity-0 hover:opacity-100 hover:bg-[#000000eb] hover:dark:bg-[#212121] rounded-lg md:w-full md:h-full md:rounded-lg sm:h-screen flex flex-col items-center justify-center">
+        <h2 className="text-[#595CFF] dark:[#595CFF]">
+          <a href="https://sweetnabbody.com/">Sweetnabbody</a>
+        </h2>
+        <p className="text-white dark:text-white">
+          A Shopify cosmetic brand <br></br>Designed and developed from
+          scratch
+        </p>
+        <ul className="pt-5 ">
+          <li>
+            <h3 className="text-[#595CFF] dark:[#595CFF]">
+              Theme Development stack
+            </h3>
+            <p className="text-white">Liquid, Ajax, Javascript, Shopify </p>
+          </li>
+          <li className="pt-2 text-[#595CFF] dark:[#595CFF]">
+            <h3>Web Design</h3>
+            <p className="text-white">
+              Photoshop, Illustrator, Figma, Blender{" "}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
             <div className="basis-1/3 flex-1">
               <Image
