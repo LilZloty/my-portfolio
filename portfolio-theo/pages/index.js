@@ -32,7 +32,7 @@ export default function Home() {
       <main className="px-10 md:px-20 lg:px-40 dark:bg-[#121212f0] dark:text-white py-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="">Theo Daudebourg</h1>
+            <h1 className="text-white dark:text-[#4262b1]">Theo Daudebourg</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
