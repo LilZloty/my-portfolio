@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 const AnimatedText = () => {
   const [text, setText] = useState('')
   const [index, setIndex] = useState(0)
-  const textArray = [    'Since 2017', 'i design and develop',  'Shopify brands,',    'who are really making sells.',    'I work with 6-7 figures brands,',    'the top 100 brands',    
-  'on',    'Shopify',    'Shopify Plus and Wordpress.' ]
+  const textArray = [    'Since 2017', 'i design and develop',  'Shopify brands',    'who are really making sells.',    'I work with 6-7 figures brands,',    'the top 100 brands',    
+  'on',   'Shopify - Shopify Plus and Wordpress.' ]
   
   useEffect(() => {
     let timeoutId

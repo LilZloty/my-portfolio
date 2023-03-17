@@ -1,0 +1,31 @@
+.glowing::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: inherit;
+  z-index: -1;
+  animation: glowing 2s infinite, rotateGlow 10s linear infinite;
+}
+
+
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #595CFF, 0 0 10px #595CFF, 0 0 15px #595CFF, 0 0 20px #595CFF;
+  }
+  100% {
+    box-shadow: 0 0 10px #595CFF, 0 0 20px #595CFF, 0 0 30px #595CFF, 0 0 40px #595CFF;
+  }
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

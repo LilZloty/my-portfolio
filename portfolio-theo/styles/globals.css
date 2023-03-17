@@ -123,3 +123,11 @@ img {
     transform: scale(1);
   }
 }
+
+.barbelssides-bg {
+  background-image: url('/images/50.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
