@@ -316,7 +316,7 @@ Or in the creation of an entire brand identity. I was engaged and had to wear mu
                           <a href="#" className="hover:underline">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                          <a href="#" className="hover:underline">Terms and Conditions</a>
                       </li>
                   </ul>
               </div>
