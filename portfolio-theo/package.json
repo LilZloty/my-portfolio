@@ -11,15 +11,15 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.11.0",
     "tailwind-scrollbar-hide": "^1.1.7",
     "use-state-effect": "^1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
   }
 }
