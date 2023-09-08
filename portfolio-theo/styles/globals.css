@@ -20,7 +20,7 @@
 
 html,
 body {
-  background-image: url("/images/bgtest4.png");
+  background-image: url("");
   background-repeat: no-repeat, no-repeat;
   background-position: center center, center center;
   background-size: cover, cover;
@@ -29,7 +29,10 @@ body {
   font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #F6F6F7;
 }
+
+
 h1, h2, h3 {
   font-weight: 800;
   font-family: 'NIKEA';
@@ -122,12 +125,5 @@ img {
     opacity: 1;
     transform: scale(1);
   }
-}
-
-.barbelssides-bg {
-  background-image: url('/images/50.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 

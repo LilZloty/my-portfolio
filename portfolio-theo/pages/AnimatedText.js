@@ -36,7 +36,7 @@ const AnimatedText = () => {
   
   
   return (
-      <p className="font-nikea text-1xl text-[#6a92e3]">{text} </p>
+      <p className="text-[#6a92e3]">{text} </p>
   )
 }
 
