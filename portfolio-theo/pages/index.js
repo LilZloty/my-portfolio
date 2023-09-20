@@ -3,11 +3,41 @@ import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import PortfolioItem from './PortfolioItem'; 
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [index, setIndex] = useState(0);
   const [hover, setHover] = useState(false);
+
+  const portfolioItems = [
+    {
+      title: "Sweetnabbody",
+      imageSrc: "/images/sweetnabbody.png",
+      altText: "Sweetnabbody",
+      description: "A Shopify cosmetic brand designed and developed from scratch.",
+      link: "https://sweetnabbody.com/",
+      technologies: ["Liquid, Ajax, Javascript, HTML, CSS", "Shopify CLI 3.0, Photoshop, Illustrator, Figma"],
+    },
+    {
+      title: "Sakaspirits",
+      imageSrc: "/images/sakaspirits.jpg",
+      altText: "Sakaspirits",
+      description: "Description for Sakaspirits project",
+      link: "https://example.com/sakaspirits",
+      technologies: ["Liquid, Ajax, Javascript, HTML, CSS", "Shopify CLI 3.0, Photoshop, Illustrator, Figma"],
+    },
+    {
+      title: "Mayfurs",
+      imageSrc: "/images/mayfursbanner.png",
+      altText: "Sakaspirits",
+      description: "Description for Sakaspirits project",
+      link: "https://example.com/sakaspirits",
+      technologies: ["Liquid, Ajax, Javascript, HTML, CSS", "Shopify CLI 3.0, Photoshop, Illustrator, Figma"],
+    },
+  
+  ];
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -171,7 +201,9 @@ Or in the creation of an entire brand identity. I was engaged and had to wear mu
             </p>
           </div>
           </section>
-          <section>
+
+          
+          <section className="flex flex-col items-center justify-center h-screen">
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/3 flex-1">
                           <div className="container relative w-full">
@@ -259,6 +291,15 @@ Or in the creation of an entire brand identity. I was engaged and had to wear mu
                             </div>
                           </div>
         </section>
+
+
+        <section className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+        {portfolioItems.map((item, index) => (
+          <PortfolioItem key={index} {...item} />
+        ))}
+      </div>
+    </section>
 
       </main>
       
