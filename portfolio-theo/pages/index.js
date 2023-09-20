@@ -179,7 +179,7 @@ Or in the creation of an entire brand identity. I was engaged and had to wear mu
                       className="rounded-lg object-cover shadow-lg transition-all duration-500 hover:opacity-40"
                       width={300}
                                 height={300}
-                      src="/images/Sweetnabbody.png"
+                      src="/images/sweetnabbody.png"
                       alt="Sweetnabbody"
                     />
                     <div className="absolute inset-x-0 top-0 bottom-0 flex items-center justify-center">
@@ -228,7 +228,7 @@ Or in the creation of an entire brand identity. I was engaged and had to wear mu
                                 className="rounded-lg object-cover"
                                 width={300}
                                 height={300}
-                                src="/images/Sweetnabbody.png"
+                                src="/images/sweetnabbody.png"
                                 alt="Sweetnabbody" />
                             </div>
                             <div className="basis-1/3 flex-1">
@@ -244,7 +244,7 @@ Or in the creation of an entire brand identity. I was engaged and had to wear mu
                                 className="rounded-lg object-cover"
                                 width={300}
                                 height={300}
-                                src="/images/Sweetnabbody.png"
+                                src="/images/sweetnabbody.png"
                                 alt="Sweetnabbody"
                               />
                             </div>
