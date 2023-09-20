@@ -3,7 +3,6 @@ import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useState, useEffect } from "react";
-import AnimatedText from './AnimatedText'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
