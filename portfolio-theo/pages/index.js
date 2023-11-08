@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PortfolioStructure from "./components/PortfolioStructure";
 import portfolioItems from "./components/PortfolioData";
 
