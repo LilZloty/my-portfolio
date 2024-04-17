@@ -19,7 +19,7 @@ export default function PortfolioStructure({ title, imageSrc, altText, descripti
             <h2 className="text-[#595CFF] text-2xl">
               <Link href={link}>{title}</Link>
             </h2>
-            <p className="text-white pb-8">{description}</p>
+            <p className="text-white p-10 text-center">{description}</p>
             <h3 className="text-[#595CFF]">Technology Stack</h3>
             <ul className="pb-5">
               {technologies.map((tech, techIndex) => (
