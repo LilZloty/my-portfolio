@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link';
 
 export default function PortfolioStructure({ title, imageSrc, altText, description, link, technologies }) {
@@ -10,9 +10,9 @@ export default function PortfolioStructure({ title, imageSrc, altText, descripti
             className="rounded-lg object-cover shadow-lg transition-opacity duration-500 hover:opacity-40"
             src={imageSrc}
             alt={altText}
-            layout="fill"
             loading="lazy"
-          />
+            fill
+            sizes="100vw" />
         </div>
         <div className="absolute inset-0 flex items-center justify-center information-tab">
           <div className="p-4 bg-transparent transition-opacity duration-500 opacity-0 hover:opacity-100 hover:bg-[#000000eb] rounded-lg md:h-full flex flex-col items-center justify-center">

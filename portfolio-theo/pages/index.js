@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
@@ -56,7 +56,10 @@ export default function Home() {
                 alt="profilimgtheo"
                 width={500}
                 height={500}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
 
@@ -131,7 +134,10 @@ export default function Home() {
                     width={120}
                     height={120}
                     className="mx-auto"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                   <h2 className="text-lg text-[#595CFF] mt-2">
                     Beautiful Designs
                   </h2>
@@ -155,7 +161,10 @@ export default function Home() {
                     width={120}
                     height={120}
                     className="mx-auto"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                   <h2 className="text-lg text-[#595CFF] mt-2">Tech Stack</h2>
                   <h3 className="py-2 text-xs md:text-sm text-[#202223]">
                     What I use to code the desired interface
@@ -178,7 +187,10 @@ export default function Home() {
                     width={120}
                     height={120}
                     className="mx-auto"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                   <h2 className="text-lg text-[#595CFF] mt-2">CMS PLATFORM</h2>
                   <h3 className="py-2 text-xs md:text-sm text-[#202223]">
                     Which tool I use to transform my code
