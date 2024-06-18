@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="text-center py-10 grid h-auto place-items-center w-auto pb-40 ">
+    <section className="text-center py-10 grid h-auto place-items-center w-auto ">
       <div className="py-10">
         <hr className="my-4 mx-auto w-48 h-1 bg-blue-100 rounded border-0 md:my-10 dark:bg-gray-700 "></hr>
         <h2 className="text-5xl text-[#595CFF] pb-5 uppercase">
@@ -26,10 +25,8 @@ const About = () => {
           i enjoy.
         </p>
       </div>
-      <div className="lg:flex gap-10">
-        {/* Render cards for design, tech stack, and CMS platform */}
-      </div>
     </section>
+
   );
 };
 

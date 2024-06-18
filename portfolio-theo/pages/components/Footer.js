@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className="pt-5 dark:bg-[#121212f0] dark:text-white py-10">
+    <footer className="pt-40  dark:text-white py-10">
       <div className="mx-auto w-full container p-4 sm:p-6">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -59,7 +59,7 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-[#202223] sm:text-center dark:text-gray-400">
-            © 2023
+            © 2024
             <a
               href="https://theodaudebourg.vercel.app"
               className="hover:underline"

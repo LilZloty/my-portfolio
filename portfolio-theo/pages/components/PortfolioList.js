@@ -3,7 +3,7 @@ import PortfolioStructure from './PortfolioStructure';
 
 const PortfolioList = ({ filteredItems }) => {
   return (
-    <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
       {filteredItems.map((item, index) => (
         <PortfolioStructure key={index} {...item} />
       ))}
