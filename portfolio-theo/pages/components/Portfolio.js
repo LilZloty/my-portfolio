@@ -1,5 +1,5 @@
 import React from 'react';
-import PortfolioList from './PortfolioList';
+import PortfolioList from './PortfolioList'; 
 import portfolioItems from './PortfolioData';
 
 const Portfolio = ({ selectedCategory, handleCategoryClick }) => {
