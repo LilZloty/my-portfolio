@@ -8,9 +8,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.2.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "next": "^15.0.0-rc.0",
+    "react": "^19.0.0-rc-1434af3d22-20240618",
+    "react-dom": "^19.0.0-rc-1434af3d22-20240618",
     "react-icons": "^5.2.1",
     "styled-components": "^6.1.11",
     "tailwind-scrollbar-hide": "^1.1.7",
