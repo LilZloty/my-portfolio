@@ -1,25 +1,56 @@
 {
   "name": "portfolio-theo",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "content:daily": "npx ts-node --project scripts/content-generator/tsconfig.json scripts/content-generator/run-daily.ts",
+    "content:curate": "npx ts-node --project scripts/content-generator/tsconfig.json scripts/content-generator/curate.ts",
+    "content:review": "npx ts-node --project scripts/content-generator/tsconfig.json scripts/content-generator/review-queue.ts",
+    "content:copy-review": "npx ts-node --project scripts/content-generator/tsconfig.json scripts/content-generator/copy-review.ts",
+    "content:from-url": "npx ts-node --project scripts/content-generator/tsconfig.json scripts/content-generator/from-url.ts"
   },
   "dependencies": {
-    "next": "^15.0.0-rc.0",
-    "react": "^19.0.0-rc-f994737d14-20240522",
-    "react-dom": "^19.0.0-rc-f994737d14-20240522",
-    "react-icons": "^5.2.1",
-    "styled-components": "^6.1.11",
-    "tailwind-scrollbar-hide": "^1.1.7",
-    "use-state-effect": "^1.0.1"
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@gsap/react": "^2.1.0",
+    "@react-three/drei": "^9.117.0",
+    "@react-three/fiber": "^8.17.0",
+    "@theatre/core": "^0.7.2",
+    "@theatre/r3f": "^0.7.2",
+    "@theatre/studio": "^0.7.2",
+    "clsx": "^2.1.1",
+    "detect-gpu": "^5.0.56",
+    "framer-motion": "^11.11.0",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.12.0",
+    "next": "^14.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rss-parser": "^3.13.0",
+    "slugify": "^1.6.6",
+    "tailwind-merge": "^2.5.0",
+    "three": "^0.170.0",
+    "zustand": "^5.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "eslint-config-next": "^14.2.4",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4"
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.170.0",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^17.2.3",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  },
+  "overrides": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

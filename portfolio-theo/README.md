@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Theo Daudebourg Portfolio
 
-## Getting Started
+An immersive 3D portfolio website built with Next.js 14, React Three Fiber, and Theatre.js.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
+- **Immersive 3D Experience** - Interactive particle fields and WebGL effects
+- **Adaptive Quality** - Auto-detects GPU capabilities for optimal performance
+- **Dark Theme** - Sleek design with lime green (#A1FB09) accents
+- **Fully Responsive** - Works beautifully on all devices
+- **Performance First** - Optimized for 60fps with graceful fallbacks
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **3D Graphics**: React Three Fiber + Three.js
+- **Animations**: Theatre.js, Framer Motion
+- **Styling**: Tailwind CSS
+- **State**: Zustand
+- **Performance**: detect-gpu for quality tiers
+
+## 🏃‍♂️ Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Main page
+│   └── globals.css        # Global styles
+├── components/
+│   ├── canvas/            # 3D components
+│   │   ├── Scene3D.tsx    # Main canvas
+│   │   └── ParticleField.tsx
+│   ├── sections/          # Page sections
+│   │   ├── HeroSection.tsx
+│   │   ├── AboutSection.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   ├── SkillsSection.tsx
+│   │   └── ContactSection.tsx
+│   └── ui/                # UI components
+│       ├── Navigation.tsx
+│       ├── Footer.tsx
+│       └── LoadingScreen.tsx
+└── lib/                   # Utilities
+    ├── store.ts           # Zustand stores
+    ├── quality.ts         # GPU detection
+    └── utils.ts           # Helper functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Brand Colors
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Lime Neon | `#A1FB09` | Primary accent |
+| Grey | `#8F929A` | Secondary text |
+| Dark | `#0A0A0A` | Background |
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📝 License
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT © Theo Daudebourg

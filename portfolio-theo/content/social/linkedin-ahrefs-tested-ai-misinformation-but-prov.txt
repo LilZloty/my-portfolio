@@ -1,0 +1,13 @@
+AI bias in SEO? It might not kill your strategy after all.
+
+I just read this Ahrefs study on Search Engine Journal. They tested how misinformation affects AI outputs, but here's the real takeaway: even biased inputs can deliver actionable insights for Generative Engine Optimization (GEO).
+
+In simple terms, GEO tweaks your content to rank better in AI-driven search results. Ahrefs fed AI models biased data and still got useful SEO recommendations - think keyword tweaks that boost visibility by 20-30% in some cases.
+
+For Shopify stores, this matters. I see e-commerce brands struggle with AI tools for CRO and SEO. But this proves you don't need perfect data to start. Use GEO to optimize product descriptions or blog posts, and measure real traffic gains.
+
+I'm upfront: AI isn't flawless, but it drives measurable results fast. I recommend testing it on one page - track conversions before and after.
+
+What's your go-to AI tactic for e-com SEO?
+
+https://www.searchenginejournal.com/ahrefs-tested-ai-misinformation-but-proved-something-else/526969/
