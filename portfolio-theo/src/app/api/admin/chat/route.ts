@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { validateAdminAuth } from '@/lib/admin-auth';
 
 const GROK_API_URL = 'https://api.x.ai/v1/chat/completions';
 
@@ -14,6 +15,12 @@ interface ChatRequest {
 
 export async function POST(request: NextRequest) {
   try {
+    // Validate admin authentication
+    const auth = validateAdminAuth(request);
+    if (!auth.valid) {
+      return auth.error;
+    }
+
     const apiKey = process.env.GROK_API_KEY;
     
     if (!apiKey) {

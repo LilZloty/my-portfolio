@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { validateAdminAuth } from '@/lib/admin-auth';
 import * as fs from 'fs';
 import * as path from 'path';
 import slugify from 'slugify';
@@ -217,6 +218,12 @@ async function generateWithGrok(prompt: string, context: string): Promise<string
 
 export async function POST(request: NextRequest) {
   try {
+    // Validate admin authentication
+    const auth = validateAdminAuth(request);
+    if (!auth.valid) {
+      return auth.error;
+    }
+
     const apiKey = process.env.GROK_API_KEY;
     if (!apiKey) {
       return NextResponse.json(

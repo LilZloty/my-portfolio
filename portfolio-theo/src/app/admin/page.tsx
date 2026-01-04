@@ -27,6 +27,15 @@ export default function AdminDashboard() {
   const [generating, setGenerating] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  // Get admin auth header for API calls
+  const getAuthHeaders = () => {
+    const password = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || '';
+    return {
+      'Content-Type': 'application/json',
+      'X-Admin-Auth': password,
+    };
+  };
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -66,7 +75,7 @@ export default function AdminDashboard() {
     try {
       const res = await fetch('/api/admin/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: getAuthHeaders(),
         body: JSON.stringify({
           messages: [...messages, userMessage].map(m => ({
             role: m.role,
@@ -104,7 +113,7 @@ Keep responses focused and practical.`,
     try {
       await fetch('/api/admin/topics', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: getAuthHeaders(),
         body: JSON.stringify({
           title,
           context: currentTopic,
@@ -142,7 +151,7 @@ Keep responses focused and practical.`,
     try {
       const res = await fetch('/api/admin/generate', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: getAuthHeaders(),
         body: JSON.stringify({
           topic: title,
           context: currentTopic,

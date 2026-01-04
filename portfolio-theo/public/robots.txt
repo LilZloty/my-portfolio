@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Block admin pages from search engines
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/admin/
+
+# Sitemap (update with your actual domain)
+# Sitemap: https://yourdomain.com/sitemap.xml
