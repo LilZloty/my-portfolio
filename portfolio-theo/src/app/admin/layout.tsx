@@ -24,8 +24,12 @@ export default function AdminLayout({
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simple password check - in production use env variable
-    const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'admin123';
+    const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD;
+    
+    if (!adminPassword) {
+      alert('Admin access is not configured. Set NEXT_PUBLIC_ADMIN_PASSWORD in .env.local');
+      return;
+    }
     
     if (password === adminPassword) {
       sessionStorage.setItem('admin_auth', 'true');
@@ -78,9 +82,7 @@ export default function AdminLayout({
                 Login
               </button>
             </form>
-            <p className="text-xs text-zinc-500 mt-4 text-center">
-              Default: admin123 (change in .env.local)
-            </p>
+
           </div>
         </div>
       </div>

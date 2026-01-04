@@ -12,6 +12,22 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   
+  // Security headers
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'X-XSS-Protection', value: '1; mode=block' },
+          { key: 'Permissions-Policy', value: 'geolocation=(), microphone=(), camera=()' },
+        ],
+      },
+    ];
+  },
+  
   // Webpack configuration for shaders and 3D assets
   webpack: (config) => {
     // Add support for GLSL shaders
